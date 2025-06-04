@@ -541,3 +541,18 @@ Blockly.Blocks['sensing_userid'] = {
     });
   }
 };
+
+Blockly.Blocks['sensing_deltatime'] = {
+  /**
+   * Block to report delta time
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": "delta time",
+      "category": Blockly.Categories.sensing,
+      "checkboxInFlyout": true,
+      "extensions": ["colours_sensing", "output_number"]
+    });
+  }
+};
